@@ -11,6 +11,7 @@ public class HelloWord {
             int readCount = 0;
             while ((readCount = fis.read(bytes)) != -1){
                 System.out.println(new String(bytes, 0, readCount));
+                System.out.println("1");
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
